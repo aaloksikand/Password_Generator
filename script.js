@@ -116,7 +116,8 @@ function generatePassword()
   else if (smallCapsInput == false && largeCapsInput == false && numericsInput == false && yourSpecialInput == false)
   {
     alert("You must pick at least one type of character for your auto-generated password.")  //returns an error message if no types of characters have been selected
-    generatePassword();  //returns an error message if no types of characters have been selected
+    return generatePassword();  //returns an error message if no types of characters have been selected
+    
   }
   console.log(passwordOptions)  //tests the password string
   var result = "";  //creates an empty string called 'result'
